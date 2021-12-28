@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/head.ejs') %> 
+<body>
+    <main id="comment-main">
+    <%- include('./partials/nav.ejs') %> 
+    
+
+   
+
+    </main>
+
+
+        <section id="contacts">
+    <div id="container-form">
+
+        <h3>comments</h3>
+        <form id="form-input" action="/comment" method ="post">
+            <input type="text" name="name" id="name" placeholder="FullName" required>
+            <textarea title="message" name="message" placeholder="write here" required></textarea>
+            
+           
+
+            <button type="submit" value="Submit"> Send </button>
+
+        </form>
+    </div>
+
+
+
+    </section>
+
+
+
+
+    <%- include('./partials/footer.ejs') %> 
+    <script src="../sitess.js"></script>
+</body>
+</html>
