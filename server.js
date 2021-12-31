@@ -49,6 +49,7 @@ app.post('/comment', async (req, res) => {
     db.collection('comments').insertOne(data, (err, results ) =>{
         if(err) throw err
         if(results){
+            
             res.redirect('/')
             // res.send(data)
             
@@ -70,9 +71,10 @@ app.get('/comments', async(req, res) =>{
         if(err) throw err
         if(results) res.send(results)
     })
-
     
 })
+
+
 
 
 

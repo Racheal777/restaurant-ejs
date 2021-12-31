@@ -11,17 +11,7 @@
 
 
 
-/* #container{
-    background-color: rgba(10, 8, 8, 0.24);
-    box-shadow: 1px 0 1px 1px rgb(0, 204, 255);
-    padding: 1em;
-    color: rgb(12, 16, 226);
-    width: 30%;
-    position: absolute;
-    align-content: left;
-    left: 17%;
-    top: 20em;
-} */
+
 
 #container h2{
     padding: 1em;
@@ -58,7 +48,7 @@
 
 #container-form{
     /* background-color: rgb(177, 50, 27); */
-    box-shadow: 2px 3px 2px 3px rgb(48, 14, 1);
+    box-shadow: 2px 3px 2px 3px rgb(66, 62, 61);
     color: white;
     padding: 2em;
     width: 50%;
@@ -73,6 +63,8 @@
 }
 h3{
     text-align: center;
+    color: #0073a7;
+    font-size: 1.3em;
 }
 
 
@@ -109,11 +101,12 @@ textarea{
 }
 
 #container-form button{
-     border: 2px solid rgb(31, 172, 190);
-    background-color: rgb(31, 172, 190);
+     border: 2px solid #0073a7;
+    background-color: #0073a7;
     width: 40%;
     padding: 0.6em;
     margin: 0.4em;
+    color: white;
     margin-bottom: 2em;
     border-radius: 5px; 
 
@@ -131,7 +124,6 @@ textarea{
     background-position: center;
    background-size: cover;
    background-repeat: no-repeat;
-   
    /* padding: 2em; */
    width: 100%;
    position: relative;
@@ -152,11 +144,7 @@ textarea{
 
 #contact-text {
     font-size: 2.3em;
-    
-
 }
-
-
 
 #contact-text button{
     background-color: orangered;
@@ -168,7 +156,7 @@ textarea{
 }
 
 #comment-main{
-    background-image: url('images/pic2.jpg');
+    background-image: url('images/burg.jpg');
     background-position: center;
    background-size: cover;
    background-repeat: no-repeat;
@@ -176,7 +164,7 @@ textarea{
    /* padding: 2em; */
    overflow-y: hidden;
    width: 100%;
-   min-height: 90vh;
+   min-height:90vh;
    /* margin-bottom: 2em; */
 }
 
@@ -192,19 +180,34 @@ textarea{
     font-size: 1em;
 }
 
+#lists button{
+    border: 2px solid #50a9d3;
+    background-color: #50a9d3;
+    width: 30%;
+    box-shadow: 0 0 2px rgb(3, 72, 201);
+    color: white;
+    padding: 0.3em;
+   align-content: flex-end;
+   
+    margin-top: 1em;
+    border-radius: 5px; 
+
+}
+
 .cardzz{
     
-        background-color: rgb(14, 129, 158);
-        box-shadow: 2px 3px 2px 3px rgb(15, 54, 54);
-        color: white;
-        padding: 2em;
+        background-color: rgb(221, 230, 233);
+        /* box-shadow: 2px 3px 2px 3px rgb(15, 54, 54); */
+        color: rgb(27, 150, 167);
+        /* padding: 2em; */
         border-radius: 3px;
         align-content: center;
-        padding: 0.9em;
-        width: 450px;
+        padding: 1.6em 0.3em;
+        width: 300px;
         border-radius: 3px;
         text-align: center;
-       
+        border: 1px solid black;
+       font-size: 1.1em;
         overflow: hidden;
         position: relative;
         
@@ -212,6 +215,15 @@ textarea{
         margin-bottom: 1em;
        
     
+}
+
+#lists h2{
+    /* background-color: #393a3a; */
+    padding: 0.5em;
+    font-size: 1.3em;
+    margin-bottom: 0.2em;
+    border-bottom: 1px solid black;
+    /* width: 100%; */
 }
 
 #lists{
@@ -224,7 +236,7 @@ textarea{
 .title{
     font-family: sans-serif;
     font-size: 1.3em;
-    color: white;
+    color: rgb(3, 86, 97);
     text-align: center;
     border-bottom: 2px solid black;
     padding: 0.5em;

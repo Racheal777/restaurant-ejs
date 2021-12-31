@@ -35,9 +35,6 @@ function closeMenu() {
 //fetching data
 const apiUrl = "http://localhost:8000/comments"
 
-// fetch(apiUrl).then(response => response.json())
-// .then(data => console.log(data))
-
 
 
 //fetch request to display the data
@@ -68,8 +65,11 @@ function getItems(comments){
     newList.innerHTML = 
     `<ul id="lists">
         <li>
-        <h2>${name}</h2>
+        <h2>${name} </h2>
         <p>${message}</p>
+        
+
+        <button type="submit" value="Submit">Reply</button>
         </li>
     </ul>`
 
@@ -77,6 +77,12 @@ function getItems(comments){
 
 })
 }
+
+
+
+//carousel
+
+
 
 
 
