@@ -28,8 +28,9 @@
 #contacts{
     display: flex;
     justify-content: space-between;
+    color: #19323e;
     /* width: 100%; */
-    background-color: #c9c5c0;
+    /* background-color: #c9c5c0; */
 }
 
 #contact{
@@ -37,15 +38,15 @@
     padding: 1em;
     text-align: center;
     margin: auto;
-    color: #0073a7;
+    color: #19323e;
 }
 
 #container-form{
-    /* background-color: rgb(177, 50, 27); */
-    box-shadow: 2px 3px 2px 3px rgb(66, 62, 61);
+    background-color: #19323e;
+    box-shadow: 1px 3px 2px 1px rgb(3, 49, 133);
     color: white;
     padding: 2em;
-    width: 50%;
+    width: 40%;
     min-height: 60vh;
     border-radius: 3px;
     align-content: center;
@@ -57,7 +58,7 @@
 }
 h3{
     text-align: center;
-    color: #0073a7;
+    color: #07c7f7;
     font-size: 1.3em;
 }
 
@@ -65,13 +66,14 @@ h3{
 #container-form #form-input{
     border-radius: 8px;
     margin: auto;
+    /* width: 90%; */
     /* display: block; */
 }
 #container-form input{
-    width: 90%;
+    /* width: 90%; */
    padding: 0.8rem;
    
-   /* color: white; */
+   
    margin: 0.6em;
    border-radius: 5px;
    border: none;
@@ -87,7 +89,7 @@ textarea{
     min-height: 20vh;
    padding: 0.8rem;
    /* color: white; */
-   margin: 0.6em;
+   margin: 0.8em;
    border-radius: 5px;
    border: none;
    
@@ -126,7 +128,7 @@ textarea{
 }
 
 #contact-text{
-    
+    text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: auto;
     color: white;
@@ -260,3 +262,167 @@ textarea{
     margin-top: 4em;
     /* margin-bottom: 3em; */
 }
+#form-input label{
+    font-size: 1.4em;
+    padding: 1em;
+    
+}
+.star-rating{
+   
+    color: rgb(250, 187, 15);
+    white-space: nowrap;
+    font-size: 1.5em;
+    display: inline-block;
+    height: 35px;
+    font-weight: bold;
+    margin-top: 0.8em;
+    margin-bottom: 1em;
+
+
+ }
+
+ @media screen and (max-width: 600px) {
+    #contacts{
+        display: block;
+        justify-content: space-between;
+        color: #19323e;
+        width: 100%;
+        
+    }
+    
+    #contact{
+        width: 90%;
+        
+    }
+    
+    #container-form{
+        
+        padding: 2em;
+        width: 90%;
+        min-height: 60vh;
+        
+        
+    }
+    
+    
+    #main-contact{
+        
+       width: 100%;
+       position: relative;
+       min-height: 40vh;
+       
+    }
+    #comment-about{
+       
+       width: 100%;
+       min-height:40vh;
+       
+    }
+    
+    #comment-main{
+        
+       overflow-y: hidden;
+       width: 100%;
+       min-height:40vh;
+      
+    }
+ }
+
+ @media screen and  (min-width:600px) and (max-width:760px) {
+    #contacts{
+        display: block;
+        justify-content: space-between;
+        color: #19323e;
+        width: 100%;
+        
+    }
+    
+    #contact{
+        width: 90%;
+        
+    }
+    
+    #container-form{
+        
+        padding: 2em;
+        width: 90%;
+        min-height: 60vh;
+        
+        
+    }
+    
+    
+    #main-contact{
+        
+       width: 100%;
+       position: relative;
+       min-height: 40vh;
+       
+    }
+    #comment-about{
+       
+       width: 100%;
+       min-height:40vh;
+       
+    }
+    
+    #comment-main{
+        
+       overflow-y: hidden;
+       width: 100%;
+       min-height:40vh;
+      
+    } 
+ }
+
+
+ @media screen and (min-width : 768px) and (max-width: 959px){
+    #main-contact{
+        
+        width: 100%;
+        position: relative;
+        min-height: 50vh;
+        
+     }
+     #comment-about{
+        
+        width: 100%;
+        min-height:50vh;
+        
+     }
+     
+     #comment-main{
+         
+        overflow-y: hidden;
+        width: 100%;
+        min-height:50vh;
+       
+     }  
+     
+     #contact{
+        width: 35%;
+        
+    }
+    
+    #container-form{
+       
+        width: 55%;
+        min-height: 45vh;
+        
+        
+    }
+    
+    #contact-text{
+    
+       text-align: center;
+        top: 5em;
+        left: 7em;
+        position: absolute;
+    
+    }
+    
+   
+    
+    
+    
+ }

@@ -3,7 +3,7 @@
     <%- include('./partials/head.ejs') %> 
 <body>
     <main id="comment-main">
-    <%- include('./partials/nav.ejs') %> 
+    <%- include('./partials/navv.ejs') %> 
     
 
    
@@ -27,7 +27,17 @@
         <form id="form-input" action="/comment" method ="post">
             <input type="text" name="name" id="name" placeholder="FullName" required>
             <textarea title="message" name="message" placeholder="write here" required></textarea>
-            
+            <label> Your overall experience with us ?</label><br>
+  
+            <span class="star-rating">
+            <input type="radio" name="rating1" value="1"><i class="fa-regular fa-star"></i>
+            <input type="radio" name="rating1" value="2"><i class="fa-regular fa-star"></i>
+            <input type="radio" name="rating1" value="3"><i class="fa-regular fa-star"></i>
+            <input type="radio" name="rating1" value="4"><i class="fa-regular fa-star"></i>
+            <input type="radio" name="rating1" value="5"><i class="fa-regular fa-star"></i>
+            </span>
+
+        </br>
            
 
             <button type="submit" value="Submit"> Send </button>

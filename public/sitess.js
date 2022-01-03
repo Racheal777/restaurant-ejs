@@ -57,7 +57,7 @@ function getItems(comments){
 
     comments.forEach((comment) => {
 
-        const {name,date, message} = comment
+        const {name,date, message, rating1} = comment
     const newList = document.createElement('li')
     newList.classList.add('cardzz')
     
@@ -71,6 +71,7 @@ function getItems(comments){
             
                 
         <p>${message}</p>
+        <p> Number of stars : ${rating1}stars</p>
         
 
         <button type="submit" value="Submit">Reply</button>

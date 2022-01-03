@@ -39,11 +39,13 @@ app.post('/comment', async (req, res) => {
     
         var  name    =  req.body.name;
         var message =   req.body.message;
-        var d = new Date().toISOString().slice(0,16);
+        var rating1 = req.body.rating1;
+        var d = new Date().toISOString().slice(0,10);
 
         const data = {
             "name"      :   name,
             "message"   :   message,
+            "rating1":rating1,
             "date":d
         }
     

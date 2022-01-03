@@ -276,7 +276,7 @@ header {
     position: relative; 
     text-align: center;
 }
-.fa-star {
+.reviews .fa-star {
     color: yellow;
     font-size: 1.5em;
     margin-top: 5em;
@@ -792,7 +792,7 @@ footer ul{
     font-size: 0.4em;
     display: flex;  
 }
-  
+ 
 
 }
  
