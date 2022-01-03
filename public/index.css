@@ -72,6 +72,7 @@ nav ul li a:hover{
 .text{
     position: absolute;
     top: 8em;
+    left: 10em;
     color: white;
     padding: 1em;
     text-align: left;
@@ -99,7 +100,7 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-    min-height: 110vh;
+    min-height: 120vh;
     width: 100%;
     overflow-y: hidden;
 }
@@ -530,6 +531,7 @@ ul{
     .nav-menu {
         position: fixed;
         left: -100%;
+        /* z-index: 1; */
         /* top: -100%; */
         top: 0;
         flex-direction: column;
@@ -573,20 +575,23 @@ ul{
 
     
     .text{
+        /* z-index: -1; */
         position: absolute;
-        top: 16em;
+        top: 18em;
        
         padding: 5em;
         text-align: center;
         
     }
     .text p{
+        /* z-index: -1; */
         font-size: 3em;
         
         /* top: 16em; */
     }
     
     .texts{
+        z-index: -1;
        font-size:3em;
        line-height: 1.2;
        letter-spacing: 0.5px;
@@ -804,6 +809,7 @@ footer ul{
         position: fixed;
         left: -100%;
         /* top: -100%; */
+        /* z-index: 1; */
         top: 0;
         flex-direction: column;
         background-color: rgb(11, 29, 46);
@@ -857,7 +863,7 @@ footer ul{
     }
     
     .texts{
-        z-index: -1;
+        /* z-index: -1; */
        font-size:3em;
        line-height: 1.2;
        letter-spacing: 0.5px;
@@ -867,12 +873,12 @@ footer ul{
     }
     header {
        
-        min-height: 170vh;
+        min-height: 90vh;
        
     }
     
     .content{
-       z-index: -1;
+       /* z-index: -1; */
         display: grid;
         grid-template-columns: 250px 250px; 
     grid-row-gap: 10px;  
@@ -1060,13 +1066,28 @@ footer ul{
   
 
 }
-    
-    
+
 
 @media screen and (min-width : 768px) and (max-width: 959px){
+    
+    nav ul{
+        
+        
+        padding: 0.8em;
+        
+        
+    }
+    
+    
+    nav li a {
+        
+        font-size: 1em; 
+        /* padding: 0.em; */
+    }
+    
     header {
        
-        min-height: 90vh;
+        min-height: 85vh;
        
     }
     
@@ -1122,7 +1143,7 @@ footer ul{
     
     .menu{
         
-        min-height: 50vh;
+        min-height: 40vh;
         position: relative; 
         display: block;
     }

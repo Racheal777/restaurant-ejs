@@ -57,7 +57,7 @@ function getItems(comments){
 
     comments.forEach((comment) => {
 
-        const {name, message} = comment
+        const {name,date, message} = comment
     const newList = document.createElement('li')
     newList.classList.add('cardzz')
     
@@ -65,7 +65,11 @@ function getItems(comments){
     newList.innerHTML = 
     `<ul id="lists">
         <li>
-        <h2>${name} </h2>
+        <h3>${name}
+        <p>${date}</p>
+        </h3>
+            
+                
         <p>${message}</p>
         
 

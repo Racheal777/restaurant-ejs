@@ -38,11 +38,13 @@ app.get('/comment', (req, res) =>{
 app.post('/comment', async (req, res) => {
     
         var  name    =  req.body.name;
-        var message =   req.body.message
+        var message =   req.body.message;
+        var d = new Date().toISOString().slice(0,16);
 
         const data = {
             "name"      :   name,
-            "message"   :   message
+            "message"   :   message,
+            "date":d
         }
     
     const db = await connection.getConnect('restaurant')
